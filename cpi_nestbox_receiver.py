@@ -1,12 +1,14 @@
 # CPI Nestbox Receiver
+# Listens for message from nestbox monitor and notifies Raspberry Pi (nestbox logger)
 #
-# Run on a micro:bit controller (which is connected to the Raspberry Pi by USB)
-# Sends a signal to the Pi when radio message "occupied" is received from the Monitor script
+# - Run on micro:bit receiver which is connected to the Raspberry Pi (nestbox logger) by USB
+# - Prints message to Pi when radio message "occupied" is received
+#   from the monitoring micro:bit located in the nesting box
 
 from microbit import *
 import radio
 
-# Configure the radio
+# Configure the micro:bit radio
 radio.on()
 radio.config(group=42)
 
