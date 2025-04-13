@@ -1,5 +1,7 @@
-# Code for the Receiver (which in turn signals the Raspberry Pi)
-# Contacts the Pi when message "occupied" is received by radio
+# CPI Nestbox Receiver
+#
+# Run on a micro:bit controller (which is connected to the Raspberry Pi by USB)
+# Sends a signal to the Pi when radio message "occupied" is received from the Monitor script
 
 from microbit import *
 import radio
