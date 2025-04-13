@@ -4,6 +4,9 @@
 # - Run on micro:bit receiver which is connected to the Raspberry Pi (nestbox logger) by USB
 # - Prints message to Pi when radio message "occupied" is received
 #   from the monitoring micro:bit located in the nesting box
+#
+# Note: This script will need to be flashed to the micro:bit using a tool such as:
+#       https://python.microbit.org/v/3
 
 from microbit import *
 import radio

@@ -1,8 +1,13 @@
 # CPI Nestbox Monitor
 # Monitors the occupancy of the nestbox
 #
-# When the nestbox is occupied (circuit connecting pins 1 and GND is closed),
-# sends radio message 'occupied' (which is picked up by the Receiver micro:bit).
+# - Run on micro:bit controller located in the nestbox
+# - When the nestbox is occupied (circuit connecting pins 1 and GND is closed),
+#   sends radio message 'occupied' (which is picked up by the Receiver micro:bit)
+#
+# Note: This script will need to be flashed to the micro:bit using a tool such as:
+#       https://python.microbit.org/v/3
+
 
 from microbit import *
 import radio
